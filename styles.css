@@ -6,11 +6,43 @@ body {
   font-family: "Kalam", cursive;
 }
 
+h1 {
+  font-size: 64px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+h2 {
+  font-size: 48px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+h3 {
+  font-size: 32px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+h4 {
+  font-size: 24px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+p {
+  font-size: 20px;
+}
+
+.container {
+  padding: 64px 256px 64px 256px;
+}
+
 #introduction {
   height: 100vh;
   width: 100vw;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("/images/introduction-bg.png") no-repeat center center/cover;
+    url("/images/backgrounds/introduction.png") no-repeat center center/cover;
 }
 
 #introduction .wrapper {
@@ -20,4 +52,139 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+
+#about-me .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-me .wrapper img {
+  width: 400px;
+}
+
+#same-taste {
+  background-color: #eee4b1;
+}
+
+#same-taste .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.two-boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.two-boxes .box {
+  width: 512px;
+  height: 512px;
+  border-radius: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  margin: 0 16px 0 16px;
+
+  color: white;
+}
+
+.two-boxes .box button {
+  padding: 8px 16px 8px 16px;
+  border-radius: 8px;
+  border: none;
+}
+
+.mal {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/images/backgrounds/mal.png") no-repeat center center/cover;
+}
+
+.spotify {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/images/backgrounds/spotify.png") no-repeat center center/cover;
+}
+
+.mal-button {
+  background: #2e51a2;
+}
+
+.spotify-button {
+  background: #1db954;
+}
+
+.mal-button:hover {
+  background: #1e40a3;
+}
+
+.spotify-button:hover {
+  background: #1ed760;
+}
+
+#same-taste .wrapper .two-boxes .box a {
+  font-size: 20px;
+  font-family: "Kalam", cursive;
+  color: white;
+  text-decoration: none;
+}
+
+#what-else .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#what-else .wrapper .card {
+  width: 512px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .banner {
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+  max-height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card .avatar {
+  width: 25%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  margin-top: -75px;
+}
+
+.card button {
+  width: 75%;
+  padding: 8px 16px 8px 16px;
+  border-radius: 8px;
+  border: none;
+  margin: 8px 0 8px 0;
+}
+
+.card a {
+  font-size: 20px;
+  font-family: "Kalam", cursive;
+  color: white;
+  text-decoration: none;
+}
+
+.card .github {
+  background-color: #010409;
+}
+
+.card .website {
+  background-color: #228be6;
 }

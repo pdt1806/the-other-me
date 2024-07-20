@@ -35,7 +35,7 @@ p {
 }
 
 .container {
-  padding: 64px 256px 64px 256px;
+  padding: 96px 256px 96px 256px;
 }
 
 #introduction {
@@ -139,11 +139,14 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 128px;
 }
 
 #what-else .wrapper .card {
   width: 512px;
   border-radius: 16px;
+  border: 1px solid #868e96;
+  padding-bottom: 32px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -166,19 +169,26 @@ p {
   margin-top: -75px;
 }
 
-.card button {
-  width: 75%;
-  padding: 8px 16px 8px 16px;
-  border-radius: 8px;
-  border: none;
-  margin: 8px 0 8px 0;
-}
-
 .card a {
   font-size: 20px;
   font-family: "Kalam", cursive;
   color: white;
   text-decoration: none;
+  width: 75%;
+  padding: 8px 16px 8px 16px;
+  border-radius: 8px;
+  border: none;
+  margin: 8px 0 8px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card a img {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+  margin-bottom: 4px;
 }
 
 .card .github {
@@ -187,4 +197,55 @@ p {
 
 .card .website {
   background-color: #228be6;
+}
+
+#transition-1 {
+  height: 100vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#transition-1 .wrapper {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#transition-2 {
+  height: 100vh;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(43, 43, 43, 0.75) 17%,
+      rgba(92, 92, 92, 0.25) 66%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    url("/images/backgrounds/transition-2.jpg") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#transition-2 .wrapper {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 128px;
+}
+
+#gaming .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#gaming .content {
+  margin-right: 128px;
 }

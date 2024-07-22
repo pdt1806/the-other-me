@@ -1,51 +1,47 @@
-@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delius&display=swap");
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Kalam", cursive;
+  font-family: "Delius", cursive;
 }
 
 h1 {
-  font-size: 64px;
-  margin-block-start: 0;
-  margin-block-end: 0;
+  font-size: 4rem;
 }
 
 h2 {
-  font-size: 48px;
-  margin-block-start: 0;
-  margin-block-end: 0;
+  font-size: 3rem;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
 }
 
 h3 {
-  font-size: 32px;
-  margin-block-start: 0;
-  margin-block-end: 0;
+  font-size: 2rem;
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 1.5rem;
   margin-block-start: 0;
   margin-block-end: 0;
 }
 
 p {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .container {
   padding: 96px 256px 96px 256px;
 }
 
-#introduction {
+#header {
   height: 100vh;
   width: 100vw;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("/images/backgrounds/introduction.png") no-repeat center center/cover;
+    url("/images/backgrounds/header.png") no-repeat center center/cover;
 }
 
-#introduction .wrapper {
+#header .wrapper {
   color: white;
   display: flex;
   flex-direction: column;
@@ -65,7 +61,46 @@ p {
 }
 
 #same-taste {
-  background-color: #eee4b1;
+  background: linear-gradient(270deg, #edffdc, #d8fdff);
+  background-size: 400% 400%;
+
+  -webkit-animation: lets-see 30s ease infinite;
+  -moz-animation: lets-see 30s ease infinite;
+  animation: lets-see 30s ease infinite;
+}
+
+@-webkit-keyframes lets-see {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes lets-see {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes lets-see {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 #same-taste .wrapper {
@@ -96,7 +131,7 @@ p {
   color: white;
 }
 
-.two-boxes .box button {
+.two-boxes .box a {
   padding: 8px 16px 8px 16px;
   border-radius: 8px;
   border: none;
@@ -125,12 +160,12 @@ p {
 }
 
 .spotify-button:hover {
-  background: #1ed760;
+  background: #1a8c3e;
 }
 
 #same-taste .wrapper .two-boxes .box a {
   font-size: 20px;
-  font-family: "Kalam", cursive;
+  font-family: "Delius", cursive;
   color: white;
   text-decoration: none;
 }
@@ -139,7 +174,8 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 128px;
+  padding-top: 196px;
+  padding-bottom: 196px;
 }
 
 #what-else .wrapper .card {
@@ -171,7 +207,7 @@ p {
 
 .card a {
   font-size: 20px;
-  font-family: "Kalam", cursive;
+  font-family: "Delius", cursive;
   color: white;
   text-decoration: none;
   width: 75%;
@@ -239,13 +275,77 @@ p {
   margin-top: 128px;
 }
 
-#gaming .wrapper {
+#gaming {
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/images/backgrounds/gaming.jpg") no-repeat center center/cover;
+}
+
+#osu {
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/images/backgrounds/osu.png") no-repeat center center/cover;
+}
+
+#gaming .wrapper,
+#osu .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
+  padding-top: 196px;
+  padding-bottom: 196px;
 }
 
-#gaming .content {
-  margin-right: 128px;
+#gaming .content,
+#osu .content {
+  max-width: 720px;
+}
+
+#pre-end {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/images/backgrounds/footer.webp") no-repeat center center/cover;
+  color: white;
+}
+
+#footer h4 {
+  margin-bottom: 32px;
+}
+
+#footer .links {
+  display: flex;
+  align-items: center;
+}
+
+#footer .links img {
+  width: 36px;
+  height: 36px;
+  padding: 6px;
+  border-radius: 50%;
+  filter: invert(1);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#footer .links .connections {
+  margin: 0 16px 0 16px;
+}
+
+#deep-footer {
+  background-color: #222;
+  color: white;
+}
+
+#deep-footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 32px 256px 32px 256px;
 }

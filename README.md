@@ -11,4 +11,4 @@
 - A simple and clean design.
 - Lightweight and fast.
 - Responsive design.
-- You will know more about "the other me."
+- Help you know more about "the other me."

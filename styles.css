@@ -86,7 +86,8 @@ p {
   /* Created from https://superdesigner.co/tools/css-backgrounds */
 }
 
-#about-me .wrapper {
+#about-me .wrapper,
+#anime .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,8 +98,24 @@ p {
   }
 }
 
-#about-me .wrapper img {
+#about-me .wrapper img,
+#anime .wrapper img {
   width: 400px;
+  margin-right: 64px;
+  margin-left: 64px;
+
+  @media (max-width: 1280px) {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+}
+
+#anime {
+  background: linear-gradient(-71deg, #f4f8ff 25%, transparent 26%, transparent 74%, #f4f8ff 75%);
+  background-size: 3em 3em;
+  background-color: #ffffff;
+  /* Created from https://superdesigner.co/tools/css-backgrounds */
 }
 
 #same-taste {
@@ -153,25 +170,28 @@ p {
   text-align: center;
 }
 
-.two-boxes {
+.two-taste-boxes,
+.three-enjoy-boxes {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 
   @media (max-width: 1280px) {
     flex-direction: column;
   }
 }
 
-.two-boxes .box {
+.taste-box,
+.enjoy-box {
   width: 512px;
   height: 512px;
   border-radius: 16px;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 0 16px 0 16px;
+  margin: 16px;
+  padding: 8px;
   color: white;
 
   @media (max-width: 1280px) {
@@ -182,6 +202,15 @@ p {
     max-width: 80vw;
     max-height: 80vw;
   }
+}
+
+.taste-box {
+  justify-content: center;
+}
+
+.enjoy-box {
+  transition: transform 0.25s ease-in-out;
+  justify-content: end;
 }
 
 .mal {
@@ -201,6 +230,58 @@ p {
     url("/images/backgrounds/spotify.png") no-repeat center center/cover;
   background-size: auto 100%;
   transition: background-size 0.25s ease-in-out;
+}
+
+.enjoy-box:hover {
+  transform: translateY(-15px);
+}
+
+.choir {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)),
+    url("/images/backgrounds/choir.jpg") no-repeat center center/cover;
+  background-size: auto 100%;
+}
+
+.soccer {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)),
+    url("/images/backgrounds/soccer.webp") no-repeat center center/cover;
+  background-size: auto 100%;
+}
+
+.politics {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)),
+    url("/images/backgrounds/miku-for-president.jpg") no-repeat center center/cover;
+  background-size: auto 100%;
+}
+
+#enjoy {
+  background: linear-gradient(25deg, #ffffff 40%, transparent 41%, transparent 59%, #ffffff 60%),
+    linear-gradient(
+      90deg,
+      transparent 45%,
+      #f7f4ff 45%,
+      #f7f4ff 55%,
+      transparent 55%,
+      transparent 20%,
+      #f7f4ff 20%,
+      #f7f4ff 30%,
+      transparent 30%
+    );
+  background-size: 3em 3em;
+  background-color: #ffffff;
+}
+
+#enjoy .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#enjoy .container {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .mal-button {
@@ -236,7 +317,7 @@ p {
   background: #d6336c;
 }
 
-.two-boxes .box a,
+.two-taste-boxes .taste-box a,
 #gaming a,
 #osu a {
   font-size: 20px;
@@ -252,86 +333,86 @@ p {
 #what-else .wrapper {
   background: linear-gradient(
       45deg,
-      #f5fdff 0%,
-      #f5fdff 5%,
+      #eeffef 0%,
+      #eeffef 5%,
       transparent 5%,
       transparent 10%,
-      #f5fdff 10%,
-      #f5fdff 15%,
+      #eeffef 10%,
+      #eeffef 15%,
       transparent 15%,
       transparent 20%,
-      #f5fdff 20%,
-      #f5fdff 25%,
+      #eeffef 20%,
+      #eeffef 25%,
       transparent 25%,
       transparent 30%,
-      #f5fdff 30%,
-      #f5fdff 35%,
+      #eeffef 30%,
+      #eeffef 35%,
       transparent 35%,
       transparent 40%,
-      #f5fdff 40%,
-      #f5fdff 45%,
+      #eeffef 40%,
+      #eeffef 45%,
       transparent 45%,
       transparent 50%,
-      #f5fdff 50%,
-      #f5fdff 100%,
+      #eeffef 50%,
+      #eeffef 100%,
       transparent 55%,
       transparent 60%,
-      #f5fdff 60%,
-      #f5fdff 65%,
+      #eeffef 60%,
+      #eeffef 65%,
       transparent 65%,
       transparent 70%,
-      #f5fdff 70%,
-      #f5fdff 75%,
+      #eeffef 70%,
+      #eeffef 75%,
       transparent 70%,
       transparent 80%,
-      #f5fdff 80%,
-      #f5fdff 85%,
+      #eeffef 80%,
+      #eeffef 85%,
       transparent 85%,
       transparent 90%,
-      #f5fdff 90%,
-      #f5fdff 95%,
+      #eeffef 90%,
+      #eeffef 95%,
       transparent 95%
     ),
     linear-gradient(
       135deg,
-      #f5fdff 0%,
-      #f5fdff 5%,
+      #eeffef 0%,
+      #eeffef 5%,
       transparent 5%,
       transparent 10%,
-      #f5fdff 10%,
-      #f5fdff 15%,
+      #eeffef 10%,
+      #eeffef 15%,
       transparent 15%,
       transparent 20%,
-      #f5fdff 20%,
-      #f5fdff 25%,
+      #eeffef 20%,
+      #eeffef 25%,
       transparent 25%,
       transparent 30%,
-      #f5fdff 30%,
-      #f5fdff 35%,
+      #eeffef 30%,
+      #eeffef 35%,
       transparent 35%,
       transparent 40%,
-      #f5fdff 40%,
-      #f5fdff 45%,
+      #eeffef 40%,
+      #eeffef 45%,
       transparent 45%,
       transparent 50%,
-      #f5fdff 50%,
-      #f5fdff 55%,
+      #eeffef 50%,
+      #eeffef 55%,
       transparent 55%,
       transparent 60%,
-      #f5fdff 60%,
-      #f5fdff 65%,
+      #eeffef 60%,
+      #eeffef 65%,
       transparent 65%,
       transparent 70%,
-      #f5fdff 70%,
-      #f5fdff 75%,
+      #eeffef 70%,
+      #eeffef 75%,
       transparent 70%,
       transparent 80%,
-      #f5fdff 80%,
-      #f5fdff 85%,
+      #eeffef 80%,
+      #eeffef 85%,
       transparent 85%,
       transparent 90%,
-      #f5fdff 90%,
-      #f5fdff 95%,
+      #eeffef 90%,
+      #eeffef 95%,
       transparent 95%
     );
   background-size: 3em 3em;
@@ -491,6 +572,18 @@ p {
   text-align: center;
 }
 
+#transition-3 {
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#transition-3 .wrapper {
+  text-align: center;
+}
+
 #gaming {
   color: white;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -503,16 +596,30 @@ p {
   max-width: 600px;
   width: 80vw;
   aspect-ratio: 16 / 9;
+  margin-left: 64px;
 }
 
 #gaming iframe {
-  margin-top: 64px;
+  margin-left: 64px;
+  @media (max-width: 1280px) {
+    margin-top: 64px;
+  }
+}
+
+#osu iframe {
+  margin-right: 64px;
 }
 
 #osu {
   color: white;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("/images/backgrounds/osu.png") no-repeat center center/cover;
+}
+
+#cristiano {
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/images/backgrounds/cristiano.jpg") no-repeat center center/cover;
 }
 
 #gaming .wrapper,
@@ -532,9 +639,26 @@ p {
   }
 }
 
+#cristiano .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  @media (max-width: 1280px) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
 #gaming .content,
-#osu .content {
+#osu .content,
+#cristiano .content {
   max-width: 720px;
+}
+
+#cristiano .wrapper img {
+  max-width: 600px;
 }
 
 #pre-end {

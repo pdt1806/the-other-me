@@ -45,6 +45,7 @@ p {
   width: 100vw;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("/images/backgrounds/header.png") no-repeat center center/cover;
+  text-align: center;
 }
 
 #header .wrapper {
@@ -54,6 +55,35 @@ p {
   justify-content: center;
   align-items: center;
   height: 100%;
+  padding: 0 30px 0 30px;
+}
+
+#header h1 {
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+  animation: glowing-text 2.5s ease-in-out infinite;
+}
+
+@keyframes glowing-text {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+  }
+}
+
+#about-me {
+  background: radial-gradient(circle, #fff5f5 10%, transparent 11%),
+    radial-gradient(circle at bottom left, #fff5f5 5%, transparent 6%),
+    radial-gradient(circle at bottom right, #fff5f5 5%, transparent 6%),
+    radial-gradient(circle at top left, #fff5f5 5%, transparent 6%),
+    radial-gradient(circle at top right, #fff5f5 5%, transparent 6%);
+  background-size: 3em 3em;
+  background-color: #ffffff;
+  /* Created from https://superdesigner.co/tools/css-backgrounds */
 }
 
 #about-me .wrapper {
@@ -113,6 +143,7 @@ p {
     background-position: 0% 50%;
   }
 }
+/* Created from https://www.gradient-animator.com/ */
 
 #same-taste .wrapper {
   display: flex;
@@ -146,16 +177,30 @@ p {
   @media (max-width: 1280px) {
     margin: 16px 0 16px 0;
   }
+
+  @media (max-width: 768px) {
+    max-width: 80vw;
+    max-height: 80vw;
+  }
 }
 
 .mal {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("/images/backgrounds/mal.png") no-repeat center center/cover;
+  background-size: auto 100%;
+  transition: background-size 0.25s ease-in-out;
+}
+
+.mal:hover,
+.spotify:hover {
+  background-size: auto 110%;
 }
 
 .spotify {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("/images/backgrounds/spotify.png") no-repeat center center/cover;
+  background-size: auto 100%;
+  transition: background-size 0.25s ease-in-out;
 }
 
 .mal-button {
@@ -205,6 +250,94 @@ p {
 }
 
 #what-else .wrapper {
+  background: linear-gradient(
+      45deg,
+      #f5fdff 0%,
+      #f5fdff 5%,
+      transparent 5%,
+      transparent 10%,
+      #f5fdff 10%,
+      #f5fdff 15%,
+      transparent 15%,
+      transparent 20%,
+      #f5fdff 20%,
+      #f5fdff 25%,
+      transparent 25%,
+      transparent 30%,
+      #f5fdff 30%,
+      #f5fdff 35%,
+      transparent 35%,
+      transparent 40%,
+      #f5fdff 40%,
+      #f5fdff 45%,
+      transparent 45%,
+      transparent 50%,
+      #f5fdff 50%,
+      #f5fdff 100%,
+      transparent 55%,
+      transparent 60%,
+      #f5fdff 60%,
+      #f5fdff 65%,
+      transparent 65%,
+      transparent 70%,
+      #f5fdff 70%,
+      #f5fdff 75%,
+      transparent 70%,
+      transparent 80%,
+      #f5fdff 80%,
+      #f5fdff 85%,
+      transparent 85%,
+      transparent 90%,
+      #f5fdff 90%,
+      #f5fdff 95%,
+      transparent 95%
+    ),
+    linear-gradient(
+      135deg,
+      #f5fdff 0%,
+      #f5fdff 5%,
+      transparent 5%,
+      transparent 10%,
+      #f5fdff 10%,
+      #f5fdff 15%,
+      transparent 15%,
+      transparent 20%,
+      #f5fdff 20%,
+      #f5fdff 25%,
+      transparent 25%,
+      transparent 30%,
+      #f5fdff 30%,
+      #f5fdff 35%,
+      transparent 35%,
+      transparent 40%,
+      #f5fdff 40%,
+      #f5fdff 45%,
+      transparent 45%,
+      transparent 50%,
+      #f5fdff 50%,
+      #f5fdff 55%,
+      transparent 55%,
+      transparent 60%,
+      #f5fdff 60%,
+      #f5fdff 65%,
+      transparent 65%,
+      transparent 70%,
+      #f5fdff 70%,
+      #f5fdff 75%,
+      transparent 70%,
+      transparent 80%,
+      #f5fdff 80%,
+      #f5fdff 85%,
+      transparent 85%,
+      transparent 90%,
+      #f5fdff 90%,
+      #f5fdff 95%,
+      transparent 95%
+    );
+  background-size: 3em 3em;
+  background-color: #ffffff;
+  /* Created from https://superdesigner.co/tools/css-backgrounds */
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -219,11 +352,11 @@ p {
   }
 }
 
-#what-else .wrapper .card {
+.card {
+  background-color: white;
   width: 512px;
   border-radius: 16px;
   border: 1px solid #868e96;
-  padding-bottom: 32px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -232,6 +365,18 @@ p {
   @media (max-width: 1280px) {
     margin-top: 64px;
   }
+
+  @media (max-width: 768px) {
+    max-width: 80vw;
+  }
+}
+
+.card .content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card .banner {
@@ -248,6 +393,11 @@ p {
   object-fit: cover;
   object-position: center;
   margin-top: -75px;
+
+  @media (max-width: 512px) {
+    width: 50%;
+    margin-top: -100px;
+  }
 }
 
 .card a {
@@ -255,8 +405,8 @@ p {
   font-family: "Delius", cursive;
   color: white;
   text-decoration: none;
-  width: 75%;
-  padding: 8px 16px 8px 16px;
+  width: 100%;
+  padding: 12px 16px 12px 16px;
   border-radius: 8px;
   border: none;
   margin: 8px 0 8px 0;
@@ -269,7 +419,7 @@ p {
   width: 24px;
   height: 24px;
   margin-right: 16px;
-  margin-bottom: 4px;
+  margin-bottom: 1px;
 }
 
 .card .github {
@@ -347,6 +497,18 @@ p {
     url("/images/backgrounds/gaming.jpg") no-repeat center center/cover;
 }
 
+#gaming iframe,
+#osu iframe {
+  max-height: 340px;
+  max-width: 600px;
+  width: 80vw;
+  aspect-ratio: 16 / 9;
+}
+
+#gaming iframe {
+  margin-top: 64px;
+}
+
 #osu {
   color: white;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -391,7 +553,6 @@ p {
 
 #footer h4 {
   margin-bottom: 32px;
-  width: max-content;
   text-align: center;
 }
 
@@ -421,6 +582,11 @@ p {
   border-radius: 50%;
   filter: invert(1);
   background-color: rgba(255, 255, 255, 0.5);
+  transition: transform 0.25s ease-in-out;
+}
+
+#footer .links img:hover {
+  transform: scale(1.2);
 }
 
 #footer .links .connections {
@@ -453,7 +619,7 @@ p {
   padding: 32px 256px 32px 256px;
 
   @media (max-width: 1280px) {
-    padding: 32px 128px 32px 128px;
+    padding: 32px 30px 32px 30px;
     flex-direction: column;
   }
 }

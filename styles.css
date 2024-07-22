@@ -18,6 +18,8 @@ h2 {
 
 h3 {
   font-size: 2rem;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 h4 {
@@ -32,6 +34,10 @@ p {
 
 .container {
   padding: 96px 256px 96px 256px;
+
+  @media (max-width: 1280px) {
+    padding: 96px 30px 96px 30px;
+  }
 }
 
 #header {
@@ -54,6 +60,11 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 1280px) {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 #about-me .wrapper img {
@@ -108,33 +119,33 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 
 .two-boxes {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 1280px) {
+    flex-direction: column;
+  }
 }
 
 .two-boxes .box {
   width: 512px;
   height: 512px;
   border-radius: 16px;
-
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
   margin: 0 16px 0 16px;
-
   color: white;
-}
 
-.two-boxes .box a {
-  padding: 8px 16px 8px 16px;
-  border-radius: 8px;
-  border: none;
+  @media (max-width: 1280px) {
+    margin: 16px 0 16px 0;
+  }
 }
 
 .mal {
@@ -155,6 +166,15 @@ p {
   background: #1db954;
 }
 
+.steam-button {
+  color: black !important;
+  background: white;
+}
+
+.osu-button {
+  background: #e6649f;
+}
+
 .mal-button:hover {
   background: #1e40a3;
 }
@@ -163,11 +183,25 @@ p {
   background: #1a8c3e;
 }
 
-#same-taste .wrapper .two-boxes .box a {
+.steam-button:hover {
+  background: #f2f2f2;
+}
+
+.osu-button:hover {
+  background: #d6336c;
+}
+
+.two-boxes .box a,
+#gaming a,
+#osu a {
   font-size: 20px;
   font-family: "Delius", cursive;
   color: white;
   text-decoration: none;
+
+  padding: 8px 16px 8px 16px;
+  border-radius: 8px;
+  border: none;
 }
 
 #what-else .wrapper {
@@ -176,6 +210,13 @@ p {
   align-items: center;
   padding-top: 196px;
   padding-bottom: 196px;
+
+  @media (max-width: 1280px) {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
 }
 
 #what-else .wrapper .card {
@@ -187,6 +228,10 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 1280px) {
+    margin-top: 64px;
+  }
 }
 
 .card .banner {
@@ -249,30 +294,51 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 
 #transition-2 {
   height: 100vh;
   background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(43, 43, 43, 0.75) 17%,
-      rgba(92, 92, 92, 0.25) 66%,
-      rgba(255, 255, 255, 0) 100%
-    ),
-    url("/images/backgrounds/transition-2.jpg") no-repeat center center/cover;
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(43, 43, 43, 0.75) 17%,
+    rgba(92, 92, 92, 0.25) 66%,
+    rgba(255, 255, 255, 0) 100%
+  );
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
 
+#transition-2 video {
+  position: absolute;
+  z-index: -1;
+  height: 100vh;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: 75%;
+}
+
+#transition-2 .video-wrapper {
+  position: absolute;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+}
+
 #transition-2 .wrapper {
+  position: absolute;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-top: 128px;
+  text-align: center;
 }
 
 #gaming {
@@ -295,6 +361,13 @@ p {
   height: 100%;
   padding-top: 196px;
   padding-bottom: 196px;
+
+  @media (max-width: 1280px) {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
 }
 
 #gaming .content,
@@ -307,6 +380,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 #footer {
@@ -317,11 +391,27 @@ p {
 
 #footer h4 {
   margin-bottom: 32px;
+  width: max-content;
+  text-align: center;
+}
+
+#footer .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @media (max-width: 1280px) {
+    align-items: center;
+  }
 }
 
 #footer .links {
   display: flex;
   align-items: center;
+
+  @media (max-width: 1280px) {
+    flex-direction: column;
+  }
 }
 
 #footer .links img {
@@ -334,12 +424,25 @@ p {
 }
 
 #footer .links .connections {
-  margin: 0 16px 0 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 1280px) {
+    margin-top: 32px;
+  }
+}
+
+#footer .links .connections * {
+  margin: 0 8px 0 8px;
 }
 
 #deep-footer {
   background-color: #222;
   color: white;
+  @media (max-width: 1280px) {
+    text-align: center;
+  }
 }
 
 #deep-footer .wrapper {
@@ -348,4 +451,9 @@ p {
   align-items: center;
   height: 100%;
   padding: 32px 256px 32px 256px;
+
+  @media (max-width: 1280px) {
+    padding: 32px 128px 32px 128px;
+    flex-direction: column;
+  }
 }

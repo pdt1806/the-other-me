@@ -12,3 +12,5 @@
 - Lightweight and fast.
 - Responsive design.
 - Help you know more about "the other me."
+
+![](https://the-other.bennynguyen.dev/images/web/thumbnail.png)

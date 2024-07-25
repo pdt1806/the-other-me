@@ -1,88 +1,6 @@
 #what-else .wrapper {
-  background: linear-gradient(
-      45deg,
-      #f5fff9 0%,
-      #f5fff9 5%,
-      transparent 5%,
-      transparent 10%,
-      #f5fff9 10%,
-      #f5fff9 15%,
-      transparent 15%,
-      transparent 20%,
-      #f5fff9 20%,
-      #f5fff9 25%,
-      transparent 25%,
-      transparent 30%,
-      #f5fff9 30%,
-      #f5fff9 35%,
-      transparent 35%,
-      transparent 40%,
-      #f5fff9 40%,
-      #f5fff9 45%,
-      transparent 45%,
-      transparent 50%,
-      #f5fff9 50%,
-      #f5fff9 100%,
-      transparent 55%,
-      transparent 60%,
-      #f5fff9 60%,
-      #f5fff9 65%,
-      transparent 65%,
-      transparent 70%,
-      #f5fff9 70%,
-      #f5fff9 75%,
-      transparent 70%,
-      transparent 80%,
-      #f5fff9 80%,
-      #f5fff9 85%,
-      transparent 85%,
-      transparent 90%,
-      #f5fff9 90%,
-      #f5fff9 95%,
-      transparent 95%
-    ),
-    linear-gradient(
-      135deg,
-      #f5fff9 0%,
-      #f5fff9 5%,
-      transparent 5%,
-      transparent 10%,
-      #f5fff9 10%,
-      #f5fff9 15%,
-      transparent 15%,
-      transparent 20%,
-      #f5fff9 20%,
-      #f5fff9 25%,
-      transparent 25%,
-      transparent 30%,
-      #f5fff9 30%,
-      #f5fff9 35%,
-      transparent 35%,
-      transparent 40%,
-      #f5fff9 40%,
-      #f5fff9 45%,
-      transparent 45%,
-      transparent 50%,
-      #f5fff9 50%,
-      #f5fff9 55%,
-      transparent 55%,
-      transparent 60%,
-      #f5fff9 60%,
-      #f5fff9 65%,
-      transparent 65%,
-      transparent 70%,
-      #f5fff9 70%,
-      #f5fff9 75%,
-      transparent 70%,
-      transparent 80%,
-      #f5fff9 80%,
-      #f5fff9 85%,
-      transparent 85%,
-      transparent 90%,
-      #f5fff9 90%,
-      #f5fff9 95%,
-      transparent 95%
-    );
+  background: linear-gradient(45deg, #edfff8 10%, transparent 10%),
+    linear-gradient(135deg, transparent 90%, #edfff8 90%);
   background-size: 3em 3em;
   background-color: #ffffff;
   /* Created from https://superdesigner.co/tools/css-backgrounds */
@@ -138,9 +56,9 @@
 }
 
 .card .banner {
-  width: 100%;
+  width: 100% !important;
   border-radius: 16px 16px 0 0;
-  max-height: 200px;
+  max-height: 200px !important;
   object-fit: cover;
   object-position: center;
 }

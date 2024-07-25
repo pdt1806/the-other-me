@@ -1,48 +1,9 @@
 #same-taste {
-  background: linear-gradient(270deg, #edffdc, #d8fdff);
-  background-size: 400% 400%;
-
-  -webkit-animation: lets-see 30s ease infinite;
-  -moz-animation: lets-see 30s ease infinite;
-  animation: lets-see 30s ease infinite;
+  background-color: #dafffe;
 }
 
-@-webkit-keyframes lets-see {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-@-moz-keyframes lets-see {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-@keyframes lets-see {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-/* Created from https://www.gradient-animator.com/ */
-
-#same-taste .wrapper {
+#same-taste .wrapper,
+#enjoy .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,7 +57,7 @@
 .mal {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("/images/backgrounds/mal.webp") no-repeat center center/cover;
-  background-size: auto 100%;
+
   transition: background-size 0.25s ease-in-out;
 }
 
@@ -108,7 +69,7 @@
 .spotify {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("/images/backgrounds/spotify.webp") no-repeat center center/cover;
-  background-size: auto 100%;
+
   transition: background-size 0.25s ease-in-out;
 }
 
@@ -116,22 +77,27 @@
   transform: translateY(-15px);
 }
 
+.choir,
+.soccer,
+.politics,
+.spotify,
+.mal {
+  background-size: auto 100%;
+}
+
 .choir {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)),
     url("/images/backgrounds/choir.webp") no-repeat center center/cover;
-  background-size: auto 100%;
 }
 
 .soccer {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)),
     url("/images/backgrounds/soccer.webp") no-repeat center center/cover;
-  background-size: auto 100%;
 }
 
 .politics {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)),
     url("/images/backgrounds/miku-for-president.webp") no-repeat center center/cover;
-  background-size: auto 100%;
 }
 
 #enjoy {
@@ -150,14 +116,6 @@
   background-size: 3em 3em;
   background-color: #ffffff;
   /* Created from https://superdesigner.co/tools/css-backgrounds */
-}
-
-#enjoy .wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
 }
 
 #enjoy .container {

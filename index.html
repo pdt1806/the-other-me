@@ -2,17 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="stylesheets/aboutme.css" />
-    <link rel="stylesheet" href="stylesheets/anime.css" />
-    <link rel="stylesheet" href="stylesheets/buttons.css" />
-    <link rel="stylesheet" href="stylesheets/footer.css" />
-    <link rel="stylesheet" href="stylesheets/funfacts.css" />
-    <link rel="stylesheet" href="stylesheets/gaming-osu-cristiano.css" />
-    <link rel="stylesheet" href="stylesheets/header.css" />
-    <link rel="stylesheet" href="stylesheets/styles.css" />
-    <link rel="stylesheet" href="stylesheets/taste-enjoy.css" />
-    <link rel="stylesheet" href="stylesheets/transition.css" />
-    <link rel="stylesheet" href="stylesheets/whatelse.css" />
+
     <link rel="icon" href="images/web/icon.png" />
     <link rel="canonical" href="https://the-other.bennynguyen.dev" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -31,7 +21,77 @@
     <meta name="twitter:image:alt" content="The Other Benny Nguyen" />
     <meta name="twitter:domain" content="the-other.bennynguyen.dev" />
     <meta name="twitter:url" content="https://the-other.bennynguyen.dev" />
-    <script async src="scripts/main.js"></script>
+
+    <style>
+      /* latin */
+      @font-face {
+        font-family: "Delius";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/delius/v19/PN_xRfK0pW_9e1rdZsg_.woff2) format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+          U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Delius", cursive;
+      }
+
+      h1 {
+        font-size: 4rem;
+      }
+
+      h2 {
+        font-size: 3rem;
+        margin-block-start: 0.67em;
+        margin-block-end: 0.67em;
+      }
+
+      h3 {
+        font-size: 2rem;
+        margin-block-start: 0;
+        margin-block-end: 0;
+      }
+
+      p {
+        font-size: 1.25rem;
+      }
+
+      .container {
+        padding: 96px 256px 96px 256px;
+
+        @media (max-width: 1280px) {
+          padding: 96px 30px 96px 30px;
+        }
+      }
+
+      #header {
+        height: 100vh;
+        text-align: center;
+      }
+    </style>
+
+    <link rel="preload" href="stylesheets/header.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <link rel="preload" href="stylesheets/buttons.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <link rel="preload" href="stylesheets/aboutme.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <link rel="preload" href="stylesheets/whatelse.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <link rel="preload" href="stylesheets/transition.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <link rel="preload" href="stylesheets/anime.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <link rel="preload" href="stylesheets/taste-enjoy.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <link
+      rel="preload"
+      href="stylesheets/gaming-osu-cristiano.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <link rel="preload" href="stylesheets/funfacts.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <link rel="preload" href="stylesheets/footer.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+
+    <script src="scripts/main.js" defer></script>
+
     <title>The Other Benny Nguyen</title>
   </head>
   <body>
@@ -46,7 +106,7 @@
     </section>
     <section id="about-me">
       <div class="wrapper container">
-        <img src="images/sides/itsuki.webp" alt="Itsuki" />
+        <img src="images/sides/itsuki.webp" alt="Itsuki" loading="lazy" width="400" height="746" />
         <div style="flex-grow: 1"></div>
         <div class="content">
           <h2>About me</h2>
@@ -69,8 +129,15 @@
         </div>
         <div style="flex-grow: 1"></div>
         <div class="card">
-          <img src="images/backgrounds/card.webp" alt="Card Banner" class="banner" />
-          <img src="https://avatars.githubusercontent.com/u/78996937" alt="Card Avatar" class="avatar" />
+          <img
+            src="images/backgrounds/card.webp"
+            alt="Card Banner"
+            class="banner"
+            loading="lazy"
+            width="512"
+            height="200"
+          />
+          <img src="https://avatars.githubusercontent.com/u/78996937" alt="Card Avatar" class="avatar" loading="lazy" />
           <br />
           <div class="content">
             <p id="card-username">pdt1806</p>
@@ -113,7 +180,7 @@
           <p>Japanese media culture has had a profound impact on my life, far beyond what I could have imagined.</p>
         </div>
         <div style="flex-grow: 1"></div>
-        <img src="images/sides/suisei.webp" alt="Suisei" />
+        <img src="images/sides/suisei.webp" alt="Suisei" loading="lazy" />
       </div>
     </section>
     <section id="same-taste">
@@ -203,7 +270,7 @@
         </div>
         <div style="flex-grow: 1"></div>
         <div>
-          <img src="images/sides/cristiano.webp" alt="Cristiano Ronaldo" />
+          <img src="images/sides/cristiano.webp" alt="Cristiano Ronaldo" loading="lazy" />
         </div>
       </div>
     </section>
@@ -251,7 +318,7 @@
               </p>
             </div>
           </div>
-          <img src="images/sides/shikanoko.webp" alt="Nokotan" />
+          <img src="images/sides/shikanoko.webp" alt="Nokotan" loading="lazy" />
           <div>
             <div class="fact">
               <h2>3</h2>
@@ -288,22 +355,23 @@
             height="120px"
             width="360px"
             style="border-radius: 16px; border: 0"
+            loading="lazy"
           ></iframe>
           <div class="connections">
             <a href="https://github.com/pdt1806" target="_blank">
-              <img src="images/logos/github.svg" alt="GitHub Logo" />
+              <img src="images/logos/github.svg" alt="GitHub Logo" loading="lazy" />
             </a>
             <a href="https://instagram.com/benny_ng08" target="_blank">
-              <img src="images/logos/instagram.svg" alt="Instagram Logo" />
+              <img src="images/logos/instagram.svg" alt="Instagram Logo" loading="lazy" />
             </a>
             <a href="https://facebook.com/pdteggman" target="_blank">
-              <img src="images/logos/facebook.svg" alt="Facebook Logo" />
+              <img src="images/logos/facebook.svg" alt="Facebook Logo" loading="lazy" />
             </a>
             <a href="https://x.com/pdteggman" target="_blank">
-              <img src="images/logos/x.svg" alt="X Logo" />
+              <img src="images/logos/x.svg" alt="X Logo" loading="lazy" />
             </a>
             <a href="https://reddit.com/user/pdteggman" target="_blank">
-              <img src="images/logos/reddit.svg" alt="Reddit Logo" />
+              <img src="images/logos/reddit.svg" alt="Reddit Logo" loading="lazy" />
             </a>
           </div>
         </div>

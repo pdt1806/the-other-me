@@ -1,0 +1,83 @@
+#gaming {
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/images/backgrounds/gaming.webp") no-repeat center center/cover;
+}
+
+#gaming iframe,
+#osu iframe {
+  max-height: 340px;
+  max-width: 600px;
+  width: 80vw;
+  aspect-ratio: 16 / 9;
+}
+
+#gaming iframe {
+  margin-left: 64px;
+  @media (max-width: 1280px) {
+    margin-top: 64px;
+    margin-left: 0;
+  }
+}
+
+#osu iframe {
+  margin-right: 64px;
+  @media (max-width: 1280px) {
+    margin-right: 0;
+  }
+}
+
+#osu {
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/images/backgrounds/osu.webp") no-repeat center center/cover;
+}
+
+#cristiano {
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/images/backgrounds/cristiano.webp") no-repeat center center/cover;
+}
+
+#gaming .wrapper,
+#osu .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-top: 196px;
+  padding-bottom: 196px;
+
+  @media (max-width: 1280px) {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
+}
+
+#cristiano .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  @media (max-width: 1280px) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+#gaming .content,
+#osu .content,
+#cristiano .content {
+  max-width: 720px;
+}
+
+#cristiano .wrapper img {
+  max-width: 600px;
+
+  @media (max-width: 1280px) {
+    max-width: 80vw;
+  }
+}

@@ -1,0 +1,44 @@
+.mal-button {
+  background: #2e51a2;
+}
+
+.spotify-button {
+  background: #1f6416;
+}
+
+.mal-button:hover {
+  background: #1e40a3;
+}
+
+.spotify-button:hover {
+  background: #00760d;
+}
+.steam-button {
+  color: black !important;
+  background: white;
+}
+
+.osu-button {
+  background: #ab5585;
+}
+
+.steam-button:hover {
+  background: #f2f2f2;
+}
+
+.osu-button:hover {
+  background: #843b63;
+}
+
+.two-taste-boxes .taste-box a,
+#gaming a,
+#osu a {
+  font-size: 20px;
+  font-family: "Delius", cursive;
+  color: white;
+  text-decoration: none;
+
+  padding: 8px 16px 8px 16px;
+  border-radius: 8px;
+  border: none;
+}

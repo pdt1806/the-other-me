@@ -1,0 +1,36 @@
+#about-me {
+  background: radial-gradient(circle, #fff5f5 10%, transparent 11%),
+    radial-gradient(circle at bottom left, #fff5f5 5%, transparent 6%),
+    radial-gradient(circle at bottom right, #fff5f5 5%, transparent 6%),
+    radial-gradient(circle at top left, #fff5f5 5%, transparent 6%),
+    radial-gradient(circle at top right, #fff5f5 5%, transparent 6%);
+  background-size: 3em 3em;
+  background-color: #ffffff;
+  /* Created from https://superdesigner.co/tools/css-backgrounds */
+}
+
+#about-me .wrapper,
+#anime .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 1280px) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+#about-me .wrapper img,
+#anime .wrapper img {
+  width: 400px;
+  margin-right: 64px;
+  margin-left: 64px;
+
+  @media (max-width: 1280px) {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 32px;
+    max-width: 80vw;
+  }
+}

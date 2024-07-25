@@ -1,0 +1,166 @@
+#same-taste {
+  background: linear-gradient(270deg, #edffdc, #d8fdff);
+  background-size: 400% 400%;
+
+  -webkit-animation: lets-see 30s ease infinite;
+  -moz-animation: lets-see 30s ease infinite;
+  animation: lets-see 30s ease infinite;
+}
+
+@-webkit-keyframes lets-see {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes lets-see {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes lets-see {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* Created from https://www.gradient-animator.com/ */
+
+#same-taste .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.two-taste-boxes,
+.three-enjoy-boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media (max-width: 1280px) {
+    flex-direction: column;
+  }
+}
+
+.taste-box,
+.enjoy-box {
+  width: 512px;
+  height: 512px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 16px;
+  padding: 8px;
+  color: white;
+
+  @media (max-width: 1280px) {
+    margin: 16px 0 16px 0;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 80vw;
+    max-height: 80vw;
+  }
+}
+
+.taste-box {
+  justify-content: center;
+}
+
+.enjoy-box {
+  transition: transform 0.25s ease-in-out;
+  justify-content: end;
+}
+
+.mal {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/images/backgrounds/mal.webp") no-repeat center center/cover;
+  background-size: auto 100%;
+  transition: background-size 0.25s ease-in-out;
+}
+
+.mal:hover,
+.spotify:hover {
+  background-size: auto 110%;
+}
+
+.spotify {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/images/backgrounds/spotify.webp") no-repeat center center/cover;
+  background-size: auto 100%;
+  transition: background-size 0.25s ease-in-out;
+}
+
+.enjoy-box:hover {
+  transform: translateY(-15px);
+}
+
+.choir {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)),
+    url("/images/backgrounds/choir.webp") no-repeat center center/cover;
+  background-size: auto 100%;
+}
+
+.soccer {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)),
+    url("/images/backgrounds/soccer.webp") no-repeat center center/cover;
+  background-size: auto 100%;
+}
+
+.politics {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)),
+    url("/images/backgrounds/miku-for-president.webp") no-repeat center center/cover;
+  background-size: auto 100%;
+}
+
+#enjoy {
+  background: linear-gradient(25deg, #ffffff 40%, transparent 41%, transparent 59%, #ffffff 60%),
+    linear-gradient(
+      90deg,
+      transparent 45%,
+      #f7f4ff 45%,
+      #f7f4ff 55%,
+      transparent 55%,
+      transparent 20%,
+      #f7f4ff 20%,
+      #f7f4ff 30%,
+      transparent 30%
+    );
+  background-size: 3em 3em;
+  background-color: #ffffff;
+  /* Created from https://superdesigner.co/tools/css-backgrounds */
+}
+
+#enjoy .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#enjoy .container {
+  padding-left: 30px;
+  padding-right: 30px;
+}

@@ -1,8 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="stylesheets/aboutme.css" />
+    <link rel="stylesheet" href="stylesheets/anime.css" />
+    <link rel="stylesheet" href="stylesheets/buttons.css" />
+    <link rel="stylesheet" href="stylesheets/footer.css" />
+    <link rel="stylesheet" href="stylesheets/funfacts.css" />
+    <link rel="stylesheet" href="stylesheets/gaming-osu-cristiano.css" />
+    <link rel="stylesheet" href="stylesheets/header.css" />
+    <link rel="stylesheet" href="stylesheets/styles.css" />
+    <link rel="stylesheet" href="stylesheets/taste-enjoy.css" />
+    <link rel="stylesheet" href="stylesheets/transition.css" />
+    <link rel="stylesheet" href="stylesheets/whatelse.css" />
     <link rel="icon" href="images/web/icon.png" />
     <link rel="canonical" href="https://the-other.bennynguyen.dev" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -21,8 +31,7 @@
     <meta name="twitter:image:alt" content="The Other Benny Nguyen" />
     <meta name="twitter:domain" content="the-other.bennynguyen.dev" />
     <meta name="twitter:url" content="https://the-other.bennynguyen.dev" />
-
-    <script async src="script.js"></script>
+    <script async src="scripts/main.js"></script>
     <title>The Other Benny Nguyen</title>
   </head>
   <body>
@@ -32,7 +41,7 @@
         <br />
         <hr style="width: 128px" />
         <br />
-        <h4>"It's my journey to take and I will find my route."</h4>
+        <p>"It's my journey to take and I will find my route."</p>
       </div>
     </section>
     <section id="about-me">
@@ -60,11 +69,11 @@
         </div>
         <div style="flex-grow: 1"></div>
         <div class="card">
-          <img src="images/backgrounds/card.png" alt="Card Banner" class="banner" />
+          <img src="images/backgrounds/card.webp" alt="Card Banner" class="banner" />
           <img src="https://avatars.githubusercontent.com/u/78996937" alt="Card Avatar" class="avatar" />
           <br />
           <div class="content">
-            <h4>pdt1806</h4>
+            <p id="card-username">pdt1806</p>
             <p id="card-desc">Experienced in centering a div.</p>
             <a href="https://bennynguyen.dev" target="_blank" class="website"
               ><img src="images/logos/website.svg" alt="GitHub Logo" style="filter: invert(1)" />My Website</a
@@ -96,7 +105,7 @@
     <section id="anime">
       <div class="wrapper container">
         <div class="content">
-          <h2>... in another world?</h2>
+          <h2>... in another world</h2>
           <p>
             Since I started watching anime in 2021, I have found myself falling deep into this rabbit hole of wonderful
             art and music.
@@ -104,7 +113,7 @@
           <p>Japanese media culture has had a profound impact on my life, far beyond what I could have imagined.</p>
         </div>
         <div style="flex-grow: 1"></div>
-        <img src="images/sides/suisei.png" alt="Suisei" />
+        <img src="images/sides/suisei.webp" alt="Suisei" />
       </div>
     </section>
     <section id="same-taste">
@@ -133,7 +142,9 @@
     </section>
     <section id="transition-3">
       <div class="wrapper container">
-        <img src="images/sides/gura.gif" alt="Gura" />
+        <video autoplay muted loop id="gura-video">
+          <source src="videos/gura.mp4" type="video/mp4" />
+        </video>
         <h2>Now, let's discuss my interests outside of coding.</h2>
       </div>
     </section>
@@ -151,10 +162,12 @@
         </div>
         <div style="flex-grow: 1"></div>
         <iframe
+          title="CS2 Video"
           src="https://www.youtube.com/embed/d3pU90h7CU0?si=SZP4ho9fUZSF8gCr"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin"
+          loading="lazy"
           allowfullscreen
         ></iframe>
       </div>
@@ -162,10 +175,12 @@
     <section id="osu">
       <div class="wrapper container">
         <iframe
+          title="osu! Video"
           src="https://www.youtube.com/embed/XMFoAblJRlk?si=ZOuZ6CZSdzKyNJ7V"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin"
+          loading="lazy"
           allowfullscreen
         ></iframe>
         <div style="flex-grow: 1"></div>
@@ -188,7 +203,7 @@
         </div>
         <div style="flex-grow: 1"></div>
         <div>
-          <img src="images/sides/cristiano.png" alt="Cristiano Ronaldo" />
+          <img src="images/sides/cristiano.webp" alt="Cristiano Ronaldo" />
         </div>
       </div>
     </section>
@@ -258,15 +273,16 @@
     </section>
     <section id="pre-end">
       <div class="wrapper container">
-        <h2>Now that you know (almost) everything about Eggu</h2>
+        <h2>Now you know (almost) everything about Eggu</h2>
         <p>yay!</p>
       </div>
     </section>
     <section id="footer">
       <div class="wrapper container">
-        <h4>... and it's time for me to know about you.</h4>
+        <p>... and it's time for me to know about you.</p>
         <div class="links">
           <iframe
+            title="DISI Small Card"
             src="https://disi.bennynguyen.dev/smallcard?id=458550515614351360?&created=true&discordlabel=true&wantAccentColor=true"
             name="disi-small-card"
             height="120px"

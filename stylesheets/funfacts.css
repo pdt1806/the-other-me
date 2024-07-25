@@ -22,8 +22,8 @@
 }
 
 #fun-facts img {
-  width: 400px;
-  height: auto;
+  width: 400px !important;
+  height: auto !important;
   margin-right: 64px;
   margin-left: 64px;
 
@@ -31,7 +31,8 @@
     margin-right: 0;
     margin-left: 0;
     margin-bottom: 32px;
-    width: 80vw;
+    width: 80vw !important;
+    height: auto !important;
     max-width: 400px;
   }
 }

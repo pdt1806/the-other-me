@@ -72,6 +72,16 @@
         height: 100vh;
         text-align: center;
       }
+
+      #header .wrapper {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 0 30px 0 30px;
+      }
     </style>
 
     <link rel="preload" href="stylesheets/header.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
@@ -137,7 +147,14 @@
             width="512"
             height="200"
           />
-          <img src="https://avatars.githubusercontent.com/u/78996937" alt="Card Avatar" class="avatar" loading="lazy" />
+          <img
+            src="https://avatars.githubusercontent.com/u/78996937"
+            alt="Card Avatar"
+            class="avatar"
+            loading="lazy"
+            width="128"
+            height="128"
+          />
           <br />
           <div class="content">
             <p id="card-username">pdt1806</p>
@@ -161,7 +178,7 @@
     </section>
     <section id="transition-2">
       <div class="video-wrapper">
-        <video autoplay muted loop id="shikanoko-video">
+        <video autoplay playsinline muted loop id="shikanoko-video">
           <source src="videos/shikanoko.mp4" type="video/mp4" />
         </video>
       </div>
@@ -209,7 +226,7 @@
     </section>
     <section id="transition-3">
       <div class="wrapper container">
-        <video autoplay muted loop id="gura-video">
+        <video autoplay playsinline muted loop id="gura-video">
           <source src="videos/gura.mp4" type="video/mp4" />
         </video>
         <h2>Now, let's discuss my interests outside of coding.</h2>
@@ -318,7 +335,7 @@
               </p>
             </div>
           </div>
-          <img src="images/sides/shikanoko.webp" alt="Nokotan" loading="lazy" />
+          <img src="images/sides/shikanoko.webp" alt="Nokotan" loading="lazy" height="991" width="400" />
           <div>
             <div class="fact">
               <h2>3</h2>

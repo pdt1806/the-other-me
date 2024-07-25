@@ -3,16 +3,6 @@
     url("/images/backgrounds/header.webp") no-repeat center center/cover;
 }
 
-#header .wrapper {
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  padding: 0 30px 0 30px;
-}
-
 #header h1 {
   text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
   animation: glowing-text 2.5s ease-in-out infinite;

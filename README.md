@@ -8,10 +8,14 @@
 
 ### Features of this website
 
-- A simple and clean design.
-- Lightweight and fast.
-- Responsive design.
+- It's lightweight.
+- It's responsive.
+- It works.
+
+(if you know, you know)
+
 - Anime girls.
+- Cristiano Ronaldo.
 - Help you know more about "the other me."
 
 ![](https://the-other.bennynguyen.dev/images/web/thumbnail.png)

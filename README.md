@@ -8,9 +8,9 @@
 
 ### Features of this website
 
-- It's lightweight.
-- It's responsive.
-- It works.
+- *It's lightweight.*
+- *It's responsive.*
+- *It works.*
 
 (if you know, you know)
 

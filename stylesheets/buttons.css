@@ -1,13 +1,13 @@
 .mal-button {
-  background: #2e51a2;
+  background: #1e40a3;
 }
 
 .spotify-button {
-  background: #1f6416;
+  background: #146714;
 }
 
 .mal-button:hover {
-  background: #1e40a3;
+  background: #2e51a2;
 }
 
 .spotify-button:hover {
@@ -19,7 +19,7 @@
 }
 
 .osu-button {
-  background: #ab5585;
+  background: #8c3667;
 }
 
 .steam-button:hover {
@@ -27,7 +27,7 @@
 }
 
 .osu-button:hover {
-  background: #843b63;
+  background: #9f3973;
 }
 
 .two-taste-boxes .taste-box a,

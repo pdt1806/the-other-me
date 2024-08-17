@@ -22,7 +22,7 @@
   flex-direction: column;
   align-items: flex-start;
 
-  @media (max-width: 1280px) {
+  @media (max-width: 960px) {
     align-items: center;
   }
 }
@@ -31,7 +31,7 @@
   display: flex;
   align-items: center;
 
-  @media (max-width: 1280px) {
+  @media (max-width: 960px) {
     flex-direction: column;
   }
 }
@@ -55,14 +55,16 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin-left: 16px;
 
-  @media (max-width: 1280px) {
+  @media (max-width: 960px) {
     margin-top: 32px;
+    margin-left: 0;
   }
 }
 
 #footer iframe {
-  @media (max-width: 1280px) {
+  @media (max-width: 960px) {
     max-width: 360px;
     width: 80vw;
     height: auto;
@@ -84,7 +86,7 @@
 #deep-footer {
   background-color: #222;
   color: white;
-  @media (max-width: 1280px) {
+  @media (max-width: 960px) {
     text-align: center;
   }
 }
@@ -94,9 +96,9 @@
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  padding: 32px 256px 32px 256px;
+  padding: 32px 96px 32px 96px;
 
-  @media (max-width: 1280px) {
+  @media (max-width: 960px) {
     padding: 32px 30px 32px 30px;
     flex-direction: column;
   }

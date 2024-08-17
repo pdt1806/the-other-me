@@ -41,21 +41,17 @@
 
 #gaming .wrapper,
 #osu .wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
   padding-top: 196px;
   padding-bottom: 196px;
 
   @media (max-width: 1280px) {
-    flex-direction: column;
-    text-align: center;
     padding-top: 128px;
     padding-bottom: 128px;
   }
 }
 
+#gaming .wrapper,
+#osu .wrapper,
 #cristiano .wrapper {
   display: flex;
   justify-content: center;

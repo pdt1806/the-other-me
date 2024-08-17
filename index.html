@@ -9,15 +9,27 @@
     <meta name="description" content="shikanoko nokonoko koshitantan ~" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="The Other Benny Nguyen" />
-    <meta property="og:description" content="shikanoko nokonoko koshitantan ~" />
+    <meta
+      property="og:description"
+      content="shikanoko nokonoko koshitantan ~"
+    />
     <meta property="og:url" content="https://the-other.bennynguyen.dev" />
-    <meta property="og:image" content="https://the-other.bennynguyen.dev/images/web/thumbnail.png" />
+    <meta
+      property="og:image"
+      content="https://the-other.bennynguyen.dev/images/web/thumbnail.png"
+    />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@pdteggman" />
     <meta name="twitter:creator" content="@pdteggman" />
     <meta name="twitter:title" content="The Other Benny Nguyen" />
-    <meta name="twitter:description" content="shikanoko nokonoko koshitantan ~" />
-    <meta name="twitter:image" content="https://the-other.bennynguyen.dev/images/web/thumbnail.png" />
+    <meta
+      name="twitter:description"
+      content="shikanoko nokonoko koshitantan ~"
+    />
+    <meta
+      name="twitter:image"
+      content="https://the-other.bennynguyen.dev/images/web/thumbnail.png"
+    />
     <meta name="twitter:image:alt" content="The Other Benny Nguyen" />
     <meta name="twitter:domain" content="the-other.bennynguyen.dev" />
     <meta name="twitter:url" content="https://the-other.bennynguyen.dev" />
@@ -29,9 +41,11 @@
         font-style: normal;
         font-weight: 400;
         font-display: swap;
-        src: url(https://fonts.gstatic.com/s/delius/v19/PN_xRfK0pW_9e1rdZsg_.woff2) format("woff2");
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
-          U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        src: url(https://fonts.gstatic.com/s/delius/v19/PN_xRfK0pW_9e1rdZsg_.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC,
+          U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
       }
 
       body {
@@ -42,6 +56,10 @@
 
       h1 {
         font-size: 4rem;
+
+        @media screen and (max-width: 768px) {
+          font-size: 3.5rem;
+        }
       }
 
       h2 {
@@ -61,11 +79,17 @@
       }
 
       .container {
-        padding: 96px 256px 96px 256px;
+        padding: 96px;
 
-        @media (max-width: 1280px) {
-          padding: 96px 30px 96px 30px;
+        @media screen and (max-width: 768px) {
+          padding: 96px 16px 96px 16px;
         }
+      }
+
+      .max1366 {
+        max-width: 1366px;
+        margin-left: auto;
+        margin-right: auto;
       }
 
       #header {
@@ -84,21 +108,66 @@
       }
     </style>
 
-    <link rel="preload" href="stylesheets/header.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-    <link rel="preload" href="stylesheets/buttons.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-    <link rel="preload" href="stylesheets/aboutme.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-    <link rel="preload" href="stylesheets/whatelse.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-    <link rel="preload" href="stylesheets/transition.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-    <link rel="preload" href="stylesheets/anime.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-    <link rel="preload" href="stylesheets/taste-enjoy.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <link
+      rel="preload"
+      href="stylesheets/header.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="stylesheets/buttons.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="stylesheets/aboutme.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="stylesheets/whatelse.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="stylesheets/transition.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="stylesheets/anime.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="stylesheets/taste-enjoy.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
     <link
       rel="preload"
       href="stylesheets/gaming-osu-cristiano.css"
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
     />
-    <link rel="preload" href="stylesheets/funfacts.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-    <link rel="preload" href="stylesheets/footer.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <link
+      rel="preload"
+      href="stylesheets/funfacts.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="stylesheets/footer.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
 
     <script src="scripts/main.js" defer></script>
 
@@ -115,26 +184,45 @@
       </div>
     </section>
     <section id="about-me">
-      <div class="wrapper container">
-        <img src="images/sides/itsuki.webp" alt="Itsuki" loading="lazy" width="400" height="746" />
+      <div class="wrapper container max1366">
+        <img
+          src="images/sides/itsuki.webp"
+          alt="Itsuki"
+          loading="lazy"
+          width="400"
+          height="746"
+        />
         <div style="flex-grow: 1"></div>
         <div class="content">
           <h2>About me</h2>
           <p>
-            Hello! My name is <strong>pdteggman</strong>, also known as <strong>piaw505</strong>, <strong>Egg</strong>,
-            or <strong>Eggu</strong>.
+            Hello! My name is <strong>pdteggman</strong>, also known as
+            <strong>piaw505</strong>, <strong>Egg</strong>, or
+            <strong>Eggu</strong>.
           </p>
-          <p>I'm just an ordinary high school student who enjoys learning and exploring new things.</p>
-          <p>Originally from Vietnam, I have spent over 14 years there before moving to the United States.</p>
+          <p>
+            I'm just an ordinary high school student who enjoys learning and
+            exploring new things.
+          </p>
+          <p>
+            Originally from Vietnam, I have spent over 14 years there before
+            moving to the United States.
+          </p>
         </div>
       </div>
     </section>
     <section id="what-else">
-      <div class="wrapper container">
+      <div class="wrapper container max1366">
         <div class="content">
           <h2>What else?</h2>
-          <p>I also invest my time in programming, specializing in developing web apps.</p>
-          <p>I am known by the name <strong>Benny Nguyen</strong> or <strong>pdt1806</strong>.</p>
+          <p>
+            I also invest my time in programming, specializing in developing web
+            apps.
+          </p>
+          <p>
+            I am known by the name <strong>Benny Nguyen</strong> or
+            <strong>pdt1806</strong>.
+          </p>
           <p>Look at the card to find out more about the "professional" me.</p>
         </div>
         <div style="flex-grow: 1"></div>
@@ -160,10 +248,18 @@
             <p id="card-username">pdt1806</p>
             <p id="card-desc">Experienced in centering a div.</p>
             <a href="https://bennynguyen.dev" target="_blank" class="website"
-              ><img src="images/logos/website.svg" alt="GitHub Logo" style="filter: invert(1)" />My Website</a
+              ><img
+                src="images/logos/website.svg"
+                alt="GitHub Logo"
+                style="filter: invert(1)"
+              />My Website</a
             >
             <a href="https://github.com/pdt1806" target="_blank" class="github">
-              <img src="images/logos/github.svg" alt="GitHub Logo" style="filter: invert(1)" />
+              <img
+                src="images/logos/github.svg"
+                alt="GitHub Logo"
+                style="filter: invert(1)"
+              />
               GitHub</a
             >
           </div>
@@ -187,14 +283,17 @@
       </div>
     </section>
     <section id="anime">
-      <div class="wrapper container">
+      <div class="wrapper container max1366">
         <div class="content">
           <h2>... in another world</h2>
           <p>
-            Since I started watching anime in 2021, I have found myself falling deep into this rabbit hole of wonderful
-            art and music.
+            Since I started watching anime in 2021, I have found myself falling
+            deep into this rabbit hole of wonderful art and music.
           </p>
-          <p>Japanese media culture has had a profound impact on my life, far beyond what I could have imagined.</p>
+          <p>
+            Japanese media culture has had a profound impact on my life, far
+            beyond what I could have imagined.
+          </p>
         </div>
         <div style="flex-grow: 1"></div>
         <img src="images/sides/suisei.webp" alt="Suisei" loading="lazy" />
@@ -209,7 +308,12 @@
             <h3>MyAnimeList</h3>
             <p>This list will keep expanding.</p>
 
-            <a href="https://myanimelist.net/animelist/piaw505" target="_blank" class="mal-button">My Anime List</a>
+            <a
+              href="https://myanimelist.net/animelist/piaw505"
+              target="_blank"
+              class="mal-button"
+              >My Anime List</a
+            >
           </div>
           <div class="taste-box spotify">
             <h3>Spotify</h3>
@@ -233,16 +337,25 @@
       </div>
     </section>
     <section id="gaming">
-      <div class="wrapper container">
+      <div class="wrapper container max1366">
         <div class="content">
           <h2>Gaming?</h2>
           <p>
-            Who (at my age) doesn't? Although I have recently spent less time playing games like CS2, feel free to hit
-            me up if you want to play with me!
+            Who (at my age) doesn't? Although I have recently spent less time
+            playing games like CS2, feel free to hit me up if you want to play
+            with me!
           </p>
-          <p>Tip: <strong>pdteggman</strong> is my username for most of the games I play.</p>
+          <p>
+            Tip: <strong>pdteggman</strong> is my username for most of the games
+            I play.
+          </p>
           <br />
-          <a href="https://steamcommunity.com/id/pdteggman/" target="_blank" class="steam-button">Steam Profile</a>
+          <a
+            href="https://steamcommunity.com/id/pdteggman/"
+            target="_blank"
+            class="steam-button"
+            >Steam Profile</a
+          >
         </div>
         <div style="flex-grow: 1"></div>
         <iframe
@@ -257,7 +370,7 @@
       </div>
     </section>
     <section id="osu">
-      <div class="wrapper container">
+      <div class="wrapper container max1366">
         <iframe
           title="osu! Video"
           src="https://www.youtube.com/embed/XMFoAblJRlk?si=ZOuZ6CZSdzKyNJ7V"
@@ -271,23 +384,32 @@
         <div class="content">
           <h2>osu?</h2>
           <p>
-            I do play osu! There are many big gaps between my 'comebacks,' but at the end of the day, my skills have
-            still improved (somehow).
+            I do play osu! There are many big gaps between my 'comebacks,' but
+            at the end of the day, my skills have still improved (somehow).
           </p>
           <br />
-          <a href="https://osu.ppy.sh/users/22419191" target="_blank" class="osu-button">osu! Profile</a>
+          <a
+            href="https://osu.ppy.sh/users/22419191"
+            target="_blank"
+            class="osu-button"
+            >osu! Profile</a
+          >
         </div>
       </div>
     </section>
     <section id="cristiano">
-      <div class="wrapper container">
+      <div class="wrapper container max1366">
         <div class="content">
           <h2>Cristiano Ronaldo?</h2>
           <p>siuuuuuuuuuuuuuuuuuuu (big fan since 2018)</p>
         </div>
         <div style="flex-grow: 1"></div>
         <div>
-          <img src="images/sides/cristiano.webp" alt="Cristiano Ronaldo" loading="lazy" />
+          <img
+            src="images/sides/cristiano.webp"
+            alt="Cristiano Ronaldo"
+            loading="lazy"
+          />
         </div>
       </div>
     </section>
@@ -298,17 +420,17 @@
         <div class="three-enjoy-boxes">
           <div class="enjoy-box choir">
             <h3>Choir</h3>
-            <p>Born to be a bass, forced to be a tenor (thanks for trusting me).</p>
+            <p>Once a bass, forever a bass.</p>
             <br />
           </div>
           <div class="enjoy-box soccer">
             <h3>Soccer</h3>
-            <p>Tough guy on the field (and could be in FIFA?)</p>
+            <p>Tough guy on the field (and maybe in FIFA?)</p>
             <br />
           </div>
           <div class="enjoy-box politics">
             <h3>Politics</h3>
-            <p>Well, it shapes the world.</p>
+            <p>Well, it affects our lives.</p>
             <br />
           </div>
         </div>
@@ -319,36 +441,45 @@
         <h2>Fun facts about me</h2>
         <br /><br />
         <div class="content">
-          <div>
+          <div class="double-facts">
             <div class="fact">
               <h2>1</h2>
               <p>
-                I have the nickname "egg" because back in my school days, I used to have a bald head and one of my
-                classmates started calling me "egghead."
+                I have the nickname "egg" because back in my school days, I used
+                to have a bald head and one of my classmates started calling me
+                "egghead."
               </p>
             </div>
             <div class="fact">
               <h2>2</h2>
               <p>
-                I've learned, or tried to learn, 5 languages throughout my life: Vietnamese, English, Mandarin Chinese
-                (forgot almost everything), Japanese, and Spanish.
+                I've learned, or tried to learn, 5 languages throughout my life:
+                Vietnamese, English, Mandarin Chinese (forgot almost
+                everything), Japanese, and Spanish.
               </p>
             </div>
           </div>
-          <img src="images/sides/shikanoko.webp" alt="Nokotan" loading="lazy" height="991" width="400" />
-          <div>
+          <img
+            src="images/sides/shikanoko.webp"
+            alt="Nokotan"
+            loading="lazy"
+            height="991"
+            width="400"
+          />
+          <div class="double-facts">
             <div class="fact">
               <h2>3</h2>
               <p>
-                I prefer pineapple on pizza. I know it's controversial, but I think it's a great combination. Why do
-                people hate it?
+                I prefer pineapple on pizza. I know it's controversial, but I
+                think it's a great combination. Why do people hate it?
               </p>
             </div>
             <div class="fact">
               <h2>4</h2>
               <p>
-                I'm really into high-quality audio, especially when it comes to music. If my budget allows, I'd probably
-                call myself an audiophile!
+                I'm really into high-quality audio, especially when it comes to
+                music. If my budget allows, I'd probably call myself an
+                audiophile!
               </p>
             </div>
           </div>
@@ -362,12 +493,12 @@
       </div>
     </section>
     <section id="footer">
-      <div class="wrapper container">
+      <div class="wrapper container max1366">
         <p>... and it's time for me to know about you.</p>
         <div class="links">
           <iframe
             title="DISI Small Card"
-            src="https://disi.bennynguyen.dev/smallcard?id=458550515614351360?&created=true&discordlabel=true&wantAccentColor=true"
+            src="https://disi.bennynguyen.dev/smallcard?id=458550515614351360&created=true&discordLabel=true&activity=true&mood=true&wantAccentColor=true"
             name="disi-small-card"
             height="120px"
             width="360px"
@@ -376,34 +507,61 @@
           ></iframe>
           <div class="connections">
             <a href="https://github.com/pdt1806" target="_blank">
-              <img src="images/logos/github.svg" alt="GitHub Logo" loading="lazy" />
+              <img
+                src="images/logos/github.svg"
+                alt="GitHub Logo"
+                loading="lazy"
+              />
             </a>
             <a href="https://instagram.com/benny_ng08" target="_blank">
-              <img src="images/logos/instagram.svg" alt="Instagram Logo" loading="lazy" />
+              <img
+                src="images/logos/instagram.svg"
+                alt="Instagram Logo"
+                loading="lazy"
+              />
             </a>
             <a href="https://facebook.com/pdteggman" target="_blank">
-              <img src="images/logos/facebook.svg" alt="Facebook Logo" loading="lazy" />
+              <img
+                src="images/logos/facebook.svg"
+                alt="Facebook Logo"
+                loading="lazy"
+              />
             </a>
             <a href="https://x.com/pdteggman" target="_blank">
               <img src="images/logos/x.svg" alt="X Logo" loading="lazy" />
             </a>
             <a href="https://reddit.com/user/pdteggman" target="_blank">
-              <img src="images/logos/reddit.svg" alt="Reddit Logo" loading="lazy" />
+              <img
+                src="images/logos/reddit.svg"
+                alt="Reddit Logo"
+                loading="lazy"
+              />
             </a>
           </div>
         </div>
       </div>
     </section>
     <section id="deep-footer">
-      <div class="wrapper">
+      <div class="wrapper max1366">
         <div>
           <p>
             Made with ❤️ in Antelope, CA.
-            <a href="https://github.com/pdt1806/the-other-me" target="_blank">Source code</a>.
+            <a href="https://github.com/pdt1806/the-other-me" target="_blank"
+              >Source code</a
+            >.
           </p>
-          <p>Powered by <a href="https://pages.cloudflare.com" target="_blank">Cloudflare Pages</a>.</p>
           <p>
-            Motivated by <a href="https://hackclub.com/arcade" target="_blank">HackClub Arcade</a> &
+            Powered by
+            <a href="https://pages.cloudflare.com" target="_blank"
+              >Cloudflare Pages</a
+            >.
+          </p>
+          <p>
+            Motivated by
+            <a href="https://hackclub.com/arcade" target="_blank"
+              >HackClub Arcade</a
+            >
+            &
             <a href="https://boba.hackclub.com" target="_blank">Boba Drops</a>.
           </p>
         </div>

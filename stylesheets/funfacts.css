@@ -16,18 +16,20 @@
   justify-content: space-between;
   align-items: center;
 
-  @media (max-width: 1280px) {
+  @media (max-width: 1520px) {
     flex-direction: column;
+    width: 100%;
   }
 }
 
 #fun-facts img {
-  width: 400px !important;
+  max-width: 400px;
+  width: 25% !important;
   height: auto !important;
   margin-right: 64px;
   margin-left: 64px;
 
-  @media (max-width: 1280px) {
+  @media (max-width: 1520px) {
     margin-right: 0;
     margin-left: 0;
     margin-bottom: 32px;
@@ -41,16 +43,45 @@
   color: white;
 }
 
+.double-facts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto 0 auto;
+
+  @media (max-width: 1520px) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  @media (max-width: 960px) {
+    flex-direction: column;
+  }
+}
+
 .fact {
-  max-width: 300px;
+  width: 275px;
+  height: 275px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background-color: white;
   border-radius: 64px;
   padding: 32px;
   margin: 48px;
   transition: transform 0.25s ease-in-out;
 
-  @media (max-width: 1280px) {
+  @media (max-width: 1520px) {
     margin: 32px 0 32px 0;
+  }
+
+  @media (max-width: 960px) {
+    width: 60vw;
+    height: auto;
+    max-width: 275px;
   }
 }
 

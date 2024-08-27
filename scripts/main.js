@@ -34,5 +34,9 @@ const lazyLoadingYoutubeVideos = () => {
   });
 };
 
+const closeNoti = () => {
+  document.getElementById("header-noti").style.display = "none";
+};
+
 fetchGitHubProfile();
 lazyLoadingYoutubeVideos();

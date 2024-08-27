@@ -97,11 +97,18 @@
 
 .politics {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)),
-    url("/images/backgrounds/miku-for-president.webp") no-repeat center center/cover;
+    url("/images/backgrounds/miku-for-president.webp") no-repeat center
+      center/cover;
 }
 
 #enjoy {
-  background: linear-gradient(25deg, #ffffff 40%, transparent 41%, transparent 59%, #ffffff 60%),
+  background: linear-gradient(
+      25deg,
+      #ffffff 40%,
+      transparent 41%,
+      transparent 59%,
+      #ffffff 60%
+    ),
     linear-gradient(
       90deg,
       transparent 45%,
@@ -121,4 +128,13 @@
 #enjoy .container {
   padding-left: 30px;
   padding-right: 30px;
+}
+
+.choir-second-call {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+  background-color: #ff4654;
+  padding: 12px;
+  border-radius: 8px;
 }
